@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TrackS - Enregistrement de classe</title>
+    <link href="./dist/img/icon.jpg" rel="icon" />
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./dist/css/styles.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- header of the page -->
+    <header class="container-fluid px-4">
+      <div class="row align-items-center">
+        <div class="d-flex align-items-center gap-2 col-12 col-md-6 ">
+          <h1 class="display-6 mb-0">TrackS</h1>
+          <img src="./dist/img/icon.jpg" class="icon" alt="tracks logo" />
+        </div>
+        <div class="col-12 col-md-6">
+          <h2 class="h2 mb-0 fw-normal">Pour un suivi de proximité</h2>
+        </div>
+      </div>
+    </header>
+
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mx-4 mt-2">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">TrackS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Classes</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Enregistrer une classe</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Liste des classes</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Students</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Enregistrer un étudiant</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Liste des étudiants</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Courses</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Enregistrer un cours</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Liste des cours</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Teachers</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Enregistrer un enseignant</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Liste des enseignants</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Assign</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Affecter un cours</a></li>
+                <li><a class="dropdown-item" href="#">Affectations</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Stats</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Statistiques globales</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Par classe</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="#">connexion</a></li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main part of the page-->
+    <main class="container my-3 flex-grow-1">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title mb-2">Enregistrement de classe</h5>
+              <form>
+                <div class="mb-3">
+                  <label for="code" class="form-label mb-1"
+                    >Code de la classe</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="code"
+                    name="code"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="label" class="form-label mb-1"
+                    >Label de la classe</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="label"
+                    name="label"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="description" class="form-label mb-1"
+                    >Description de la classe</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="description"
+                    name="description"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-primary">
+                  Enregistrer
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer of th page -->
+    <footer class="bg-body-tertiary rounded mx-4 mb-2 py-4 px-3">
+      <div class="row align-items-center text-primary">
+        <div class="col-12 col-md-4 text-md-start mb-3 mb-md-0">
+          &copy; 2026 TrackS. All rights reserved by OTHMAN.
+        </div>
+        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+          <p class="mb-3">
+            Email:
+            <a href="mailto:osmanounana@gmail.com">osmanounana@gmail.com</a>
+          </p>
+          <p class="mb-0">
+            Phone: <a href="tel:+237656629344">+237 656 629 344</a>
+          </p>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <p class="mb-3">Address: 123 Zanminkan, Amabam, Cameroon</p>
+          <p class="mb-0">
+            Follow us on: <a href="#">Facebook</a> | <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
